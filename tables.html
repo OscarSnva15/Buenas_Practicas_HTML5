@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Las tablas en Html sirven para mostrar contenido tabulado 
+        
+        La esctructura basica de una tabla se compone de:
+        table-> Etiqueta que encierra una tabla
+        tr->    Table row,etiqueta que construye una fila
+        td->    table data, etiqueta que construye una celda
+        
+        Truco // El numero de celdas adentro de un tr establecerá el núnmero 
+        de columnas de la tabla
+
+        Los titulos de las tablas ,se establecen con la etiqueta caption
+        es una etiqueta opcional, y segun la especificacion esa etiqueta se coloca justo despues 
+        de la etiqueta table
+    -->
+    <h1>tablas en Html</h1>
+    <table>
+        <caption>HORARIO DE CLASES</caption>
+        <thead>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>M</th>
+            <th>J</th>
+            <th>V</th>
+        </thead> 
+        <tbody> 
+            <tr>
+                <td>8:30  -  9:30</td>
+                <td>Lengua</td>
+                <td>Educacion Fisica Ciencias</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Tecnologia</td>
+            </tr>
+            <tr>
+                <td>9:30  -  10:25</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Tecnologia</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td colspan="6">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td>Lengua</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Educacion Fisica Ciencias</td>
+                <td>Tecnologia</td>
+            </tr>
+            <tr>
+                <td>11:45 - 12:45</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Lengua</td>
+                <td>Educacion Fisica Ciencias</td>
+                <td>Tecnologia</td>
+            </tr>
+            <tr>
+                <td>12:45 - 13:35</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Lengua</td>
+                <td>Tecnologia</td> 
+                <td>Educacion Fisica Ciencias</td>
+            </tr>
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Lengua</td>
+                <td>Educacion Fisica Ciencias</td>
+                <td>Ingles</td>
+                <td>Música</td>
+                <td>Tecnologia</td>
+            </tr>
+        </tbody>
+        <!-- Tfoot , sirve paravestablecer un pie de tabla sirve para
+        denotar informacion al final como pien de pagina -->
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de ASignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

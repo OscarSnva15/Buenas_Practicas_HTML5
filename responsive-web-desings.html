@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Picture</title>
+</head>
+<body>
+    <h1>Etiqueta Picture</h1>
+    <picture>
+        <!-- con la etiqeuta source podemos ingresar un set de imagenes ,pero si no se agrega una etiqueta img en caso de que no cargue el set de imagens.,
+        al no detertar la img o etiqeuta img no hara nada -->
+        <source srcset="
+        /assets/img/Img1.jpg" media="(max-width:1200px)">
+        <img src="/assets/img/img-ratio-1.jpg" alt="Imagen del hombre araña">
+    </picture>
+</body>
+</html>
